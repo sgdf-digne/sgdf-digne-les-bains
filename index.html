@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 25.8.4.2 (Windows)"/>
+	<meta name="created" content="2026-09-12T15:40:46.188168600"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+	</style>
+</head>
+<body lang="fr-FR" link="#000080" vlink="#800000" dir="ltr"><p style="margin-bottom: 0cm; line-height: 100%">
+&lt;!DOCTYPE html&gt;<br/>
+&lt;html lang=&quot;fr&quot;&gt;<br/>
+&lt;head&gt;<br/>
+
+ &lt;meta charset=&quot;UTF-8&quot;&gt;<br/>
+  &lt;meta
+name=&quot;viewport&quot; content=&quot;width=device-width,
+initial-scale=1.0&quot;&gt;<br/>
+<br/>
+  &lt;title&gt;Scouts et
+Guides de France – Digne-les-Bains&lt;/title&gt;<br/>
+<br/>
+  &lt;meta
+name=&quot;description&quot;<br/>
+        content=&quot;Scouts et
+Guides de France – Groupe de Digne-les-Bains. Une aventure pour
+grandir, faire équipe, apprendre en agissant et vivre dehors.&quot;&gt;<br/>
+<br/>
+
+ &lt;style&gt;<br/>
+<br/>
+    /*
+=====================================================<br/>
+      
+SGDF DIGNE-LES-BAINS<br/>
+       SITE V1<br/>
+      
+===================================================== */<br/>
+<br/>
+ 
+  :root {<br/>
+      --blue: #0067a5;<br/>
+      --blue-dark:
+#00466f;<br/>
+      --blue-light: #eaf5fa;<br/>
+      --yellow:
+#ffd400;<br/>
+      --yellow-light: #fff5bd;<br/>
+      --green:
+#51a83d;<br/>
+      --orange: #ed8b24;<br/>
+      --red: #d94c45;<br/>
+
+     --cream: #fffaf0;<br/>
+      --white: #ffffff;<br/>
+     
+--text: #173447;<br/>
+      --muted: #647886;<br/>
+      --border:
+#e2ebef;<br/>
+    }<br/>
+<br/>
+    * {<br/>
+      box-sizing:
+border-box;<br/>
+      margin: 0;<br/>
+      padding: 0;<br/>
+    }<br/>
+<br/>
+
+   html {<br/>
+      scroll-behavior: smooth;<br/>
+    }<br/>
+<br/>
+ 
+  body {<br/>
+      font-family: Arial, Helvetica, sans-serif;<br/>
+ 
+    color: var(--text);<br/>
+      background: white;<br/>
+     
+line-height: 1.6;<br/>
+    }<br/>
+<br/>
+    a {<br/>
+      color:
+inherit;<br/>
+      text-decoration: none;<br/>
+    }<br/>
+<br/>
+   
+img {<br/>
+      max-width: 100%;<br/>
+      display: block;<br/>
+   
+}<br/>
+<br/>
+    .container {<br/>
+      width: min(1120px, 92%);<br/>
+
+     margin: auto;<br/>
+    }<br/>
+<br/>
+    /* =================
+HEADER ================= */<br/>
+<br/>
+    header {<br/>
+     
+position: sticky;<br/>
+      top: 0;<br/>
+      z-index: 1000;<br/>
+ 
+    background: rgba(255,255,255,.97);<br/>
+      border-bottom: 1px
+solid var(--border);<br/>
+    }<br/>
+<br/>
+    .nav {<br/>
+     
+min-height: 76px;<br/>
+      display: flex;<br/>
+      align-items:
+center;<br/>
+      justify-content: space-between;<br/>
+      gap:
+30px;<br/>
+    }<br/>
+<br/>
+    .logo {<br/>
+      display: flex;<br/>
+
+     align-items: center;<br/>
+      gap: 10px;<br/>
+     
+font-weight: 800;<br/>
+      color: var(--blue-dark);<br/>
+     
+font-size: 18px;<br/>
+    }<br/>
+<br/>
+    .logo-box {<br/>
+     
+background: var(--blue);<br/>
+      color: white;<br/>
+      padding:
+7px 9px;<br/>
+      border-radius: 7px;<br/>
+      font-size: 13px;<br/>
+
+     font-weight: 900;<br/>
+    }<br/>
+<br/>
+    nav {<br/>
+     
+display: flex;<br/>
+      align-items: center;<br/>
+      gap: 25px;<br/>
+
+     font-weight: 700;<br/>
+      font-size: 15px;<br/>
+    }<br/>
+<br/>
+
+   nav a:hover {<br/>
+      color: var(--blue);<br/>
+    }<br/>
+<br/>
+
+   .nav-button {<br/>
+      background: var(--blue);<br/>
+     
+color: white !important;<br/>
+      padding: 10px 18px;<br/>
+     
+border-radius: 30px;<br/>
+    }<br/>
+<br/>
+    .menu-button {<br/>
+  
+   display: none;<br/>
+      border: 0;<br/>
+      background: none;<br/>
+
+     font-size: 28px;<br/>
+      cursor: pointer;<br/>
+    }<br/>
+<br/>
+
+   /* ================= HERO ================= */<br/>
+<br/>
+   
+.hero {<br/>
+      background:<br/>
+        linear-gradient(<br/>
+   
+      135deg,<br/>
+          #edf8fc 0%,<br/>
+          #ffffff 65%<br/>
+
+       );<br/>
+<br/>
+      padding: 95px 0 100px;<br/>
+     
+overflow: hidden;<br/>
+    }<br/>
+<br/>
+    .hero-grid {<br/>
+     
+display: grid;<br/>
+      grid-template-columns: 1.1fr .9fr;<br/>
+   
+  align-items: center;<br/>
+      gap: 70px;<br/>
+    }<br/>
+<br/>
+  
+ .eyebrow {<br/>
+      color: var(--blue);<br/>
+      font-size:
+13px;<br/>
+      font-weight: 900;<br/>
+      letter-spacing: 1.6px;<br/>
+
+     margin-bottom: 15px;<br/>
+    }<br/>
+<br/>
+    .hero h1 {<br/>
+ 
+    font-size: clamp(48px, 7vw, 82px);<br/>
+      line-height: .98;<br/>
+
+     letter-spacing: -3px;<br/>
+      color: var(--blue-dark);<br/>
+ 
+    margin-bottom: 28px;<br/>
+    }<br/>
+<br/>
+    .hero h1 span {<br/>
+
+     color: var(--blue);<br/>
+    }<br/>
+<br/>
+    .hero-text {<br/>
+
+     font-size: 20px;<br/>
+      color: var(--muted);<br/>
+     
+max-width: 650px;<br/>
+      margin-bottom: 30px;<br/>
+    }<br/>
+<br/>
+
+   .buttons {<br/>
+      display: flex;<br/>
+      gap: 13px;<br/>
+  
+   flex-wrap: wrap;<br/>
+    }<br/>
+<br/>
+    .button {<br/>
+     
+display: inline-block;<br/>
+      padding: 14px 23px;<br/>
+     
+border-radius: 30px;<br/>
+      font-weight: 800;<br/>
+     
+transition: transform .2s;<br/>
+    }<br/>
+<br/>
+    .button:hover {<br/>
+
+     transform: translateY(-2px);<br/>
+    }<br/>
+<br/>
+   
+.button-blue {<br/>
+      background: var(--blue);<br/>
+      color:
+white;<br/>
+    }<br/>
+<br/>
+    .button-yellow {<br/>
+     
+background: var(--yellow);<br/>
+      color: var(--text);<br/>
+   
+}<br/>
+<br/>
+    .button-white {<br/>
+      background: white;<br/>
+ 
+    border: 1px solid var(--border);<br/>
+    }<br/>
+<br/>
+    /*
+Illustration */<br/>
+<br/>
+    .hero-illustration {<br/>
+     
+height: 390px;<br/>
+      border-radius: 38px;<br/>
+      background:
+var(--blue);<br/>
+      position: relative;<br/>
+      overflow:
+hidden;<br/>
+      box-shadow: 0 25px 70px rgba(0,70,110,.18);<br/>
+ 
+  }<br/>
+<br/>
+    .sun {<br/>
+      width: 75px;<br/>
+      height:
+75px;<br/>
+      background: var(--yellow);<br/>
+      border-radius:
+50%;<br/>
+      position: absolute;<br/>
+      top: 38px;<br/>
+     
+right: 45px;<br/>
+    }<br/>
+<br/>
+    .mountain-one,<br/>
+   
+.mountain-two {<br/>
+      position: absolute;<br/>
+      bottom: 0;<br/>
+
+     width: 0;<br/>
+      height: 0;<br/>
+      border-left: 220px
+solid transparent;<br/>
+      border-right: 220px solid transparent;<br/>
+
+   }<br/>
+<br/>
+    .mountain-one {<br/>
+      left: -100px;<br/>
+   
+  border-bottom: 300px solid #07527a;<br/>
+    }<br/>
+<br/>
+   
+.mountain-two {<br/>
+      right: -150px;<br/>
+      border-bottom:
+260px solid #0b4160;<br/>
+    }<br/>
+<br/>
+    .tent {<br/>
+     
+position: absolute;<br/>
+      bottom: 90px;<br/>
+      left: 50%;<br/>
+
+     transform: translateX(-50%);<br/>
+      font-size: 90px;<br/>
+  
+ }<br/>
+<br/>
+    .illustration-text {<br/>
+      position:
+absolute;<br/>
+      bottom: 30px;<br/>
+      width: 100%;<br/>
+     
+text-align: center;<br/>
+      color: white;<br/>
+      font-size:
+18px;<br/>
+      font-weight: 800;<br/>
+      z-index: 5;<br/>
+   
+}<br/>
+<br/>
+    /* ================= SECTIONS ================= */<br/>
+<br/>
+
+   section {<br/>
+      padding: 90px 0;<br/>
+    }<br/>
+<br/>
+   
+.intro {<br/>
+      text-align: center;<br/>
+    }<br/>
+<br/>
+   
+.intro-content {<br/>
+      max-width: 800px;<br/>
+      margin:
+auto;<br/>
+    }<br/>
+<br/>
+    h2 {<br/>
+      font-size:
+clamp(34px, 5vw, 52px);<br/>
+      line-height: 1.05;<br/>
+     
+letter-spacing: -1.5px;<br/>
+      color: var(--blue-dark);<br/>
+    
+ margin-bottom: 22px;<br/>
+    }<br/>
+<br/>
+    .intro p {<br/>
+     
+font-size: 18px;<br/>
+      color: var(--muted);<br/>
+    }<br/>
+<br/>
+
+   /* ================= UNITES ================= */<br/>
+<br/>
+   
+.units {<br/>
+      background: var(--cream);<br/>
+    }<br/>
+<br/>
+ 
+  .section-heading {<br/>
+      display: flex;<br/>
+     
+justify-content: space-between;<br/>
+      align-items: end;<br/>
+   
+  gap: 30px;<br/>
+      margin-bottom: 40px;<br/>
+    }<br/>
+<br/>
+  
+ .section-heading a {<br/>
+      color: var(--blue);<br/>
+     
+font-weight: 800;<br/>
+    }<br/>
+<br/>
+    .units-grid {<br/>
+     
+display: grid;<br/>
+      grid-template-columns: repeat(4, 1fr);<br/>
+
+     gap: 18px;<br/>
+    }<br/>
+<br/>
+    .unit {<br/>
+     
+background: white;<br/>
+      border-radius: 22px;<br/>
+     
+padding: 28px;<br/>
+      border-top: 7px solid;<br/>
+     
+min-height: 295px;<br/>
+    }<br/>
+<br/>
+    .unit.green {<br/>
+     
+border-color: var(--green);<br/>
+    }<br/>
+<br/>
+    .unit.orange {<br/>
+
+     border-color: var(--orange);<br/>
+    }<br/>
+<br/>
+   
+.unit.blue {<br/>
+      border-color: var(--blue);<br/>
+    }<br/>
+<br/>
+
+   .unit.red {<br/>
+      border-color: var(--red);<br/>
+    }<br/>
+<br/>
+
+   .unit-age {<br/>
+      font-size: 12px;<br/>
+      text-transform:
+uppercase;<br/>
+      letter-spacing: 1px;<br/>
+      color:
+var(--muted);<br/>
+      font-weight: 900;<br/>
+    }<br/>
+<br/>
+   
+.unit-icon {<br/>
+      font-size: 45px;<br/>
+      margin: 18px 0;<br/>
+
+   }<br/>
+<br/>
+    .unit h3 {<br/>
+      font-size: 23px;<br/>
+     
+margin-bottom: 10px;<br/>
+      color: var(--blue-dark);<br/>
+    }<br/>
+<br/>
+
+   .unit p {<br/>
+      color: var(--muted);<br/>
+    }<br/>
+<br/>
+  
+ /* ================= VALEURS ================= */<br/>
+<br/>
+   
+.values {<br/>
+      background: var(--blue-dark);<br/>
+      color:
+white;<br/>
+    }<br/>
+<br/>
+    .values h2 {<br/>
+      color:
+white;<br/>
+      max-width: 650px;<br/>
+    }<br/>
+<br/>
+    .values
+.eyebrow {<br/>
+      color: var(--yellow);<br/>
+    }<br/>
+<br/>
+   
+.values-grid {<br/>
+      display: grid;<br/>
+     
+grid-template-columns: repeat(4, 1fr);<br/>
+      gap: 35px;<br/>
+   
+  margin-top: 55px;<br/>
+    }<br/>
+<br/>
+    .value-number {<br/>
+  
+   color: var(--yellow);<br/>
+      font-size: 30px;<br/>
+     
+font-weight: 900;<br/>
+    }<br/>
+<br/>
+    .value h3 {<br/>
+     
+font-size: 21px;<br/>
+      margin: 10px 0;<br/>
+    }<br/>
+<br/>
+   
+.value p {<br/>
+      color: #c5d9e4;<br/>
+    }<br/>
+<br/>
+    /*
+================= PROJETS ================= */<br/>
+<br/>
+   
+.projects {<br/>
+      background: white;<br/>
+    }<br/>
+<br/>
+   
+.projects-grid {<br/>
+      display: grid;<br/>
+     
+grid-template-columns: 1fr 1fr;<br/>
+      gap: 25px;<br/>
+     
+margin-top: 45px;<br/>
+    }<br/>
+<br/>
+    .project {<br/>
+     
+background: var(--blue-light);<br/>
+      padding: 35px;<br/>
+     
+border-radius: 25px;<br/>
+    }<br/>
+<br/>
+    .project-icon {<br/>
+ 
+    font-size: 40px;<br/>
+      margin-bottom: 15px;<br/>
+    }<br/>
+<br/>
+
+   .project h3 {<br/>
+      font-size: 25px;<br/>
+      color:
+var(--blue-dark);<br/>
+      margin-bottom: 10px;<br/>
+    }<br/>
+<br/>
+
+   .project p {<br/>
+      color: var(--muted);<br/>
+    }<br/>
+<br/>
+
+   /* ================= JAMBOREE ================= */<br/>
+<br/>
+   
+.jamboree {<br/>
+      background: var(--yellow);<br/>
+    }<br/>
+<br/>
+
+   .jamboree-box {<br/>
+      display: grid;<br/>
+     
+grid-template-columns: 1fr .7fr;<br/>
+      gap: 60px;<br/>
+     
+align-items: center;<br/>
+    }<br/>
+<br/>
+    .jamboree h2 {<br/>
+  
+   color: var(--blue-dark);<br/>
+    }<br/>
+<br/>
+    .jamboree p {<br/>
+
+     font-size: 18px;<br/>
+      color: #4b4b31;<br/>
+    }<br/>
+<br/>
+
+   .gdansk {<br/>
+      background: white;<br/>
+      border-radius:
+30px;<br/>
+      padding: 45px;<br/>
+      text-align: center;<br/>
+ 
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);<br/>
+    }<br/>
+<br/>
+  
+ .gdansk .big {<br/>
+      font-size: 65px;<br/>
+      margin-bottom:
+10px;<br/>
+    }<br/>
+<br/>
+    .gdansk h3 {<br/>
+      color:
+var(--blue-dark);<br/>
+      font-size: 30px;<br/>
+    }<br/>
+<br/>
+ 
+  /* ================= REJOINDRE ================= */<br/>
+<br/>
+   
+.join {<br/>
+      background: #f4f9fb;<br/>
+    }<br/>
+<br/>
+   
+.join-box {<br/>
+      background: var(--blue);<br/>
+      color:
+white;<br/>
+      border-radius: 32px;<br/>
+      padding: 55px;<br/>
+
+     display: flex;<br/>
+      align-items: center;<br/>
+     
+justify-content: space-between;<br/>
+      gap: 40px;<br/>
+    }<br/>
+<br/>
+
+   .join h2 {<br/>
+      color: white;<br/>
+      margin-bottom:
+12px;<br/>
+    }<br/>
+<br/>
+    .join p {<br/>
+      color: #dceef7;<br/>
+
+     max-width: 680px;<br/>
+    }<br/>
+<br/>
+    /* =================
+FOOTER ================= */<br/>
+<br/>
+    footer {<br/>
+     
+background: #092e43;<br/>
+      color: white;<br/>
+      padding:
+60px 0 25px;<br/>
+    }<br/>
+<br/>
+    .footer-grid {<br/>
+     
+display: grid;<br/>
+      grid-template-columns: 2fr 1fr 1fr;<br/>
+  
+   gap: 50px;<br/>
+    }<br/>
+<br/>
+    footer h3 {<br/>
+      color:
+var(--yellow);<br/>
+      margin-bottom: 13px;<br/>
+    }<br/>
+<br/>
+
+   footer a {<br/>
+      color: #c8dbe5;<br/>
+      display: block;<br/>
+
+     margin: 5px 0;<br/>
+    }<br/>
+<br/>
+    .footer-bottom {<br/>
+ 
+    border-top: 1px solid rgba(255,255,255,.15);<br/>
+     
+margin-top: 50px;<br/>
+      padding-top: 20px;<br/>
+     
+text-align: center;<br/>
+      color: #93adba;<br/>
+      font-size:
+13px;<br/>
+    }<br/>
+<br/>
+    /* ================= MOBILE
+================= */<br/>
+<br/>
+    @media(max-width: 850px) {<br/>
+<br/>
+
+     .menu-button {<br/>
+        display: block;<br/>
+      }<br/>
+<br/>
+
+     nav {<br/>
+        display: none;<br/>
+        position:
+absolute;<br/>
+        left: 0;<br/>
+        right: 0;<br/>
+       
+top: 76px;<br/>
+        background: white;<br/>
+       
+flex-direction: column;<br/>
+        padding: 25px;<br/>
+       
+box-shadow: 0 15px 30px rgba(0,0,0,.1);<br/>
+      }<br/>
+<br/>
+     
+nav.open {<br/>
+        display: flex;<br/>
+      }<br/>
+<br/>
+     
+.hero-grid,<br/>
+      .jamboree-box {<br/>
+       
+grid-template-columns: 1fr;<br/>
+      }<br/>
+<br/>
+     
+.units-grid,<br/>
+      .values-grid {<br/>
+       
+grid-template-columns: repeat(2, 1fr);<br/>
+      }<br/>
+<br/>
+     
+.join-box {<br/>
+        display: block;<br/>
+      }<br/>
+<br/>
+    
+ .join-box .button {<br/>
+        margin-top: 25px;<br/>
+      }<br/>
+<br/>
+
+     .footer-grid {<br/>
+        grid-template-columns: 1fr 1fr;<br/>
+
+     }<br/>
+    }<br/>
+<br/>
+    @media(max-width: 560px) {<br/>
+<br/>
+
+     section {<br/>
+        padding: 65px 0;<br/>
+      }<br/>
+<br/>
+
+     .hero {<br/>
+        padding: 65px 0;<br/>
+      }<br/>
+<br/>
+  
+   .hero h1 {<br/>
+        font-size: 52px;<br/>
+      }<br/>
+<br/>
+ 
+    .hero-illustration {<br/>
+        height: 280px;<br/>
+      }<br/>
+<br/>
+
+     .units-grid,<br/>
+      .values-grid,<br/>
+     
+.projects-grid,<br/>
+      .footer-grid {<br/>
+       
+grid-template-columns: 1fr;<br/>
+      }<br/>
+<br/>
+     
+.section-heading {<br/>
+        display: block;<br/>
+      }<br/>
+<br/>
+
+     .section-heading a {<br/>
+        display: inline-block;<br/>
+  
+     margin-top: 10px;<br/>
+      }<br/>
+<br/>
+      .join-box {<br/>
+
+       padding: 35px;<br/>
+      }<br/>
+<br/>
+      .gdansk {<br/>
+  
+     padding: 30px;<br/>
+      }<br/>
+    }<br/>
+<br/>
+ 
+&lt;/style&gt;<br/>
+&lt;/head&gt;<br/>
+<br/>
+&lt;body&gt;<br/>
+<br/>
+&lt;!--
+================= HEADER ================= --&gt;<br/>
+<br/>
+&lt;header&gt;<br/>
+<br/>
+
+ &lt;div class=&quot;container nav&quot;&gt;<br/>
+<br/>
+    &lt;a
+href=&quot;#accueil&quot; class=&quot;logo&quot;&gt;<br/>
+      &lt;span
+class=&quot;logo-box&quot;&gt;SGDF&lt;/span&gt;<br/>
+     
+&lt;span&gt;Digne-les-Bains&lt;/span&gt;<br/>
+    &lt;/a&gt;<br/>
+<br/>
+
+   &lt;button class=&quot;menu-button&quot; onclick=&quot;toggleMenu()&quot;&gt;<br/>
+
+     ☰<br/>
+    &lt;/button&gt;<br/>
+<br/>
+    &lt;nav id=&quot;menu&quot;&gt;<br/>
+<br/>
+
+     &lt;a href=&quot;#groupe&quot;&gt;Le groupe&lt;/a&gt;<br/>
+<br/>
+
+     &lt;a href=&quot;#unites&quot;&gt;Nos unités&lt;/a&gt;<br/>
+<br/>
+
+     &lt;a href=&quot;#aventures&quot;&gt;Nos aventures&lt;/a&gt;<br/>
+<br/>
+
+     &lt;a href=&quot;#jamboree&quot;&gt;Jamboree&lt;/a&gt;<br/>
+<br/>
+
+     &lt;a href=&quot;#contact&quot; class=&quot;nav-button&quot;&gt;<br/>
+
+       Nous rejoindre<br/>
+      &lt;/a&gt;<br/>
+<br/>
+    &lt;/nav&gt;<br/>
+<br/>
+
+ &lt;/div&gt;<br/>
+<br/>
+&lt;/header&gt;<br/>
+<br/>
+<br/>
+&lt;!--
+================= ACCUEIL ================= --&gt;<br/>
+<br/>
+&lt;main
+id=&quot;accueil&quot;&gt;<br/>
+<br/>
+&lt;section class=&quot;hero&quot;&gt;<br/>
+<br/>
+
+ &lt;div class=&quot;container hero-grid&quot;&gt;<br/>
+<br/>
+   
+&lt;div&gt;<br/>
+<br/>
+      &lt;p class=&quot;eyebrow&quot;&gt;<br/>
+
+       SCOUTS ET GUIDES DE FRANCE · DIGNE-LES-BAINS<br/>
+     
+&lt;/p&gt;<br/>
+<br/>
+      &lt;h1&gt;<br/>
+        Une aventure&lt;br&gt;<br/>
+
+       à vivre &lt;span&gt;ensemble.&lt;/span&gt;<br/>
+      &lt;/h1&gt;<br/>
+<br/>
+
+     &lt;p class=&quot;hero-text&quot;&gt;<br/>
+        Grandir,
+faire équipe, apprendre en agissant,<br/>
+        vivre dehors et
+construire des projets qui nous ressemblent.<br/>
+      &lt;/p&gt;<br/>
+<br/>
+
+     &lt;div class=&quot;buttons&quot;&gt;<br/>
+<br/>
+        &lt;a
+href=&quot;#groupe&quot; class=&quot;button button-yellow&quot;&gt;<br/>
+
+         Découvrir le groupe<br/>
+        &lt;/a&gt;<br/>
+<br/>
+    
+   &lt;a href=&quot;mailto:sgdf.digne.groupe@gmail.com&quot;<br/>
+   
+       class=&quot;button button-white&quot;&gt;<br/>
+          Nous
+contacter<br/>
+        &lt;/a&gt;<br/>
+<br/>
+      &lt;/div&gt;<br/>
+<br/>
+
+   &lt;/div&gt;<br/>
+<br/>
+<br/>
+    &lt;div
+class=&quot;hero-illustration&quot;&gt;<br/>
+<br/>
+      &lt;div
+class=&quot;sun&quot;&gt;&lt;/div&gt;<br/>
+<br/>
+      &lt;div
+class=&quot;mountain-one&quot;&gt;&lt;/div&gt;<br/>
+      &lt;div
+class=&quot;mountain-two&quot;&gt;&lt;/div&gt;<br/>
+<br/>
+      &lt;div
+class=&quot;tent&quot;&gt;<br/>
+        ⛺<br/>
+      &lt;/div&gt;<br/>
+<br/>
+
+     &lt;div class=&quot;illustration-text&quot;&gt;<br/>
+        De
+Digne-les-Bains&lt;br&gt;<br/>
+        vers de nouvelles aventures<br/>
+
+     &lt;/div&gt;<br/>
+<br/>
+    &lt;/div&gt;<br/>
+<br/>
+ 
+&lt;/div&gt;<br/>
+<br/>
+&lt;/section&gt;<br/>
+<br/>
+<br/>
+&lt;!--
+================= GROUPE ================= --&gt;<br/>
+<br/>
+&lt;section
+class=&quot;intro&quot; id=&quot;groupe&quot;&gt;<br/>
+<br/>
+  &lt;div
+class=&quot;container intro-content&quot;&gt;<br/>
+<br/>
+    &lt;p
+class=&quot;eyebrow&quot;&gt;<br/>
+      NOTRE GROUPE<br/>
+    &lt;/p&gt;<br/>
+<br/>
+
+   &lt;h2&gt;<br/>
+      Le scoutisme, c'est surtout une histoire de
+rencontres.<br/>
+    &lt;/h2&gt;<br/>
+<br/>
+    &lt;p&gt;<br/>
+     
+À Digne-les-Bains, les Scouts et Guides de France<br/>
+     
+proposent aux enfants et aux jeunes de vivre des aventures<br/>
+     
+collectives, de prendre des responsabilités et de développer<br/>
+ 
+    leur autonomie.<br/>
+    &lt;/p&gt;<br/>
+<br/>
+    &lt;br&gt;<br/>
+<br/>
+
+   &lt;p&gt;<br/>
+      Nous croyons à un scoutisme qui permet à
+chacun de trouver<br/>
+      sa place, de révéler le meilleur de
+soi-même et d'agir<br/>
+      concrètement pour les autres et pour
+son environnement.<br/>
+    &lt;/p&gt;<br/>
+<br/>
+ 
+&lt;/div&gt;<br/>
+<br/>
+&lt;/section&gt;<br/>
+<br/>
+<br/>
+&lt;!--
+================= UNITES ================= --&gt;<br/>
+<br/>
+&lt;section
+class=&quot;units&quot; id=&quot;unites&quot;&gt;<br/>
+<br/>
+  &lt;div
+class=&quot;container&quot;&gt;<br/>
+<br/>
+    &lt;div
+class=&quot;section-heading&quot;&gt;<br/>
+<br/>
+      &lt;div&gt;<br/>
+<br/>
+
+       &lt;p class=&quot;eyebrow&quot;&gt;<br/>
+          DE 6 À 17
+ANS<br/>
+        &lt;/p&gt;<br/>
+<br/>
+        &lt;h2&gt;<br/>
+      
+   Une aventure pour chaque âge.<br/>
+        &lt;/h2&gt;<br/>
+<br/>
+
+     &lt;/div&gt;<br/>
+<br/>
+      &lt;a href=&quot;#contact&quot;&gt;<br/>
+
+       Une question ? Contactez-nous →<br/>
+      &lt;/a&gt;<br/>
+<br/>
+
+   &lt;/div&gt;<br/>
+<br/>
+<br/>
+    &lt;div class=&quot;units-grid&quot;&gt;<br/>
+<br/>
+<br/>
+
+     &lt;article class=&quot;unit green&quot;&gt;<br/>
+<br/>
+       
+&lt;div class=&quot;unit-age&quot;&gt;<br/>
+          6–8 ans<br/>
+
+       &lt;/div&gt;<br/>
+<br/>
+        &lt;div class=&quot;unit-icon&quot;&gt;<br/>
+
+         🌱<br/>
+        &lt;/div&gt;<br/>
+<br/>
+        &lt;h3&gt;<br/>
+
+         Farfadets<br/>
+        &lt;/h3&gt;<br/>
+<br/>
+        &lt;p&gt;<br/>
+
+         La ronde des petits aventuriers :<br/>
+          jouer,
+découvrir, imaginer et grandir ensemble.<br/>
+        &lt;/p&gt;<br/>
+<br/>
+
+     &lt;/article&gt;<br/>
+<br/>
+<br/>
+      &lt;article class=&quot;unit
+orange&quot;&gt;<br/>
+<br/>
+        &lt;div class=&quot;unit-age&quot;&gt;<br/>
+
+         8–11 ans<br/>
+        &lt;/div&gt;<br/>
+<br/>
+        &lt;div
+class=&quot;unit-icon&quot;&gt;<br/>
+          🦊<br/>
+       
+&lt;/div&gt;<br/>
+<br/>
+        &lt;h3&gt;<br/>
+         
+Louveteaux-Jeannettes<br/>
+        &lt;/h3&gt;<br/>
+<br/>
+       
+&lt;p&gt;<br/>
+          Des défis, des imaginaires et des
+découvertes<br/>
+          pour apprendre à faire équipe.<br/>
+   
+    &lt;/p&gt;<br/>
+<br/>
+      &lt;/article&gt;<br/>
+<br/>
+<br/>
+   
+  &lt;article class=&quot;unit blue&quot;&gt;<br/>
+<br/>
+        &lt;div
+class=&quot;unit-age&quot;&gt;<br/>
+          11–14 ans<br/>
+      
+ &lt;/div&gt;<br/>
+<br/>
+        &lt;div class=&quot;unit-icon&quot;&gt;<br/>
+
+         🧭<br/>
+        &lt;/div&gt;<br/>
+<br/>
+        &lt;h3&gt;<br/>
+
+         Scouts-Guides<br/>
+        &lt;/h3&gt;<br/>
+<br/>
+       
+&lt;p&gt;<br/>
+          Choisir, construire des projets, prendre
+des<br/>
+          responsabilités et vivre l'aventure.<br/>
+       
+&lt;/p&gt;<br/>
+<br/>
+      &lt;/article&gt;<br/>
+<br/>
+<br/>
+     
+&lt;article class=&quot;unit red&quot;&gt;<br/>
+<br/>
+        &lt;div
+class=&quot;unit-age&quot;&gt;<br/>
+          14–17 ans<br/>
+      
+ &lt;/div&gt;<br/>
+<br/>
+        &lt;div class=&quot;unit-icon&quot;&gt;<br/>
+
+         🔥<br/>
+        &lt;/div&gt;<br/>
+<br/>
+        &lt;h3&gt;<br/>
+
+         Pionniers-Caravelles<br/>
+        &lt;/h3&gt;<br/>
+<br/>
+   
+    &lt;p&gt;<br/>
+          Monter des projets ambitieux, agir et
+préparer<br/>
+          les grandes aventures.<br/>
+        &lt;/p&gt;<br/>
+<br/>
+
+     &lt;/article&gt;<br/>
+<br/>
+    &lt;/div&gt;<br/>
+<br/>
+ 
+&lt;/div&gt;<br/>
+<br/>
+&lt;/section&gt;<br/>
+<br/>
+<br/>
+&lt;!--
+================= VALEURS ================= --&gt;<br/>
+<br/>
+&lt;section
+class=&quot;values&quot;&gt;<br/>
+<br/>
+  &lt;div
+class=&quot;container&quot;&gt;<br/>
+<br/>
+    &lt;p
+class=&quot;eyebrow&quot;&gt;<br/>
+      CE QUI NOUS ANIME<br/>
+   
+&lt;/p&gt;<br/>
+<br/>
+    &lt;h2&gt;<br/>
+      Faire équipe. Vivre
+dehors. Agir.<br/>
+    &lt;/h2&gt;<br/>
+<br/>
+<br/>
+    &lt;div
+class=&quot;values-grid&quot;&gt;<br/>
+<br/>
+<br/>
+      &lt;div
+class=&quot;value&quot;&gt;<br/>
+<br/>
+        &lt;div
+class=&quot;value-number&quot;&gt;<br/>
+          01<br/>
+       
+&lt;/div&gt;<br/>
+<br/>
+        &lt;h3&gt;<br/>
+          Faire
+équipe<br/>
+        &lt;/h3&gt;<br/>
+<br/>
+        &lt;p&gt;<br/>
+  
+       Chacun apporte quelque chose au collectif.<br/>
+          On
+apprend à écouter, décider et construire ensemble.<br/>
+       
+&lt;/p&gt;<br/>
+<br/>
+      &lt;/div&gt;<br/>
+<br/>
+<br/>
+      &lt;div
+class=&quot;value&quot;&gt;<br/>
+<br/>
+        &lt;div
+class=&quot;value-number&quot;&gt;<br/>
+          02<br/>
+       
+&lt;/div&gt;<br/>
+<br/>
+        &lt;h3&gt;<br/>
+          Apprendre
+en agissant<br/>
+        &lt;/h3&gt;<br/>
+<br/>
+        &lt;p&gt;<br/>
+
+         On expérimente, on se trompe, on recommence<br/>
+         
+et on progresse.<br/>
+        &lt;/p&gt;<br/>
+<br/>
+      &lt;/div&gt;<br/>
+<br/>
+<br/>
+
+     &lt;div class=&quot;value&quot;&gt;<br/>
+<br/>
+        &lt;div
+class=&quot;value-number&quot;&gt;<br/>
+          03<br/>
+       
+&lt;/div&gt;<br/>
+<br/>
+        &lt;h3&gt;<br/>
+          Vivre
+dehors<br/>
+        &lt;/h3&gt;<br/>
+<br/>
+        &lt;p&gt;<br/>
+   
+      Explorer, bivouaquer, observer et apprendre<br/>
+          à
+prendre soin de notre environnement.<br/>
+        &lt;/p&gt;<br/>
+<br/>
+
+     &lt;/div&gt;<br/>
+<br/>
+<br/>
+      &lt;div class=&quot;value&quot;&gt;<br/>
+<br/>
+
+       &lt;div class=&quot;value-number&quot;&gt;<br/>
+          04<br/>
+
+       &lt;/div&gt;<br/>
+<br/>
+        &lt;h3&gt;<br/>
+          Agir
+pour les autres<br/>
+        &lt;/h3&gt;<br/>
+<br/>
+        &lt;p&gt;<br/>
+
+         Être utile, donner du sens à ses actions<br/>
+          et
+participer à la vie du territoire.<br/>
+        &lt;/p&gt;<br/>
+<br/>
+
+     &lt;/div&gt;<br/>
+<br/>
+<br/>
+    &lt;/div&gt;<br/>
+<br/>
+ 
+&lt;/div&gt;<br/>
+<br/>
+&lt;/section&gt;<br/>
+<br/>
+<br/>
+&lt;!--
+================= AVENTURES ================= --&gt;<br/>
+<br/>
+&lt;section
+class=&quot;projects&quot; id=&quot;aventures&quot;&gt;<br/>
+<br/>
+ 
+&lt;div class=&quot;container&quot;&gt;<br/>
+<br/>
+    &lt;p
+class=&quot;eyebrow&quot;&gt;<br/>
+      NOS AVENTURES<br/>
+   
+&lt;/p&gt;<br/>
+<br/>
+    &lt;h2&gt;<br/>
+      Des idées qui
+deviennent projets.<br/>
+    &lt;/h2&gt;<br/>
+<br/>
+    &lt;p
+style=&quot;max-width:720px;color:#647886;font-size:18px;&quot;&gt;<br/>
+
+     Une année scoute est faite de petites et de grandes aventures.<br/>
+
+     Les jeunes sont acteurs de leurs projets et apprennent à les<br/>
+
+     construire de bout en bout.<br/>
+    &lt;/p&gt;<br/>
+<br/>
+<br/>
+
+   &lt;div class=&quot;projects-grid&quot;&gt;<br/>
+<br/>
+<br/>
+     
+&lt;article class=&quot;project&quot;&gt;<br/>
+<br/>
+        &lt;div
+class=&quot;project-icon&quot;&gt;<br/>
+          ⛺<br/>
+       
+&lt;/div&gt;<br/>
+<br/>
+        &lt;h3&gt;<br/>
+          Les camps<br/>
+
+       &lt;/h3&gt;<br/>
+<br/>
+        &lt;p&gt;<br/>
+         
+Quelques jours pour vivre pleinement dehors,<br/>
+          gagner en
+autonomie et partager une expérience forte.<br/>
+        &lt;/p&gt;<br/>
+<br/>
+
+     &lt;/article&gt;<br/>
+<br/>
+<br/>
+      &lt;article
+class=&quot;project&quot;&gt;<br/>
+<br/>
+        &lt;div
+class=&quot;project-icon&quot;&gt;<br/>
+          🤝<br/>
+       
+&lt;/div&gt;<br/>
+<br/>
+        &lt;h3&gt;<br/>
+          Les
+services<br/>
+        &lt;/h3&gt;<br/>
+<br/>
+        &lt;p&gt;<br/>
+ 
+        Donner un coup de main, rencontrer les acteurs<br/>
+         
+du territoire et découvrir que l'on peut être utile.<br/>
+       
+&lt;/p&gt;<br/>
+<br/>
+      &lt;/article&gt;<br/>
+<br/>
+<br/>
+     
+&lt;article class=&quot;project&quot;&gt;<br/>
+<br/>
+        &lt;div
+class=&quot;project-icon&quot;&gt;<br/>
+          💡<br/>
+       
+&lt;/div&gt;<br/>
+<br/>
+        &lt;h3&gt;<br/>
+          Les
+projets<br/>
+        &lt;/h3&gt;<br/>
+<br/>
+        &lt;p&gt;<br/>
+  
+       Partir d'une idée, chercher des partenaires,<br/>
+         
+organiser, réaliser et faire le bilan.<br/>
+        &lt;/p&gt;<br/>
+<br/>
+
+     &lt;/article&gt;<br/>
+<br/>
+<br/>
+      &lt;article
+class=&quot;project&quot;&gt;<br/>
+<br/>
+        &lt;div
+class=&quot;project-icon&quot;&gt;<br/>
+          💶<br/>
+       
+&lt;/div&gt;<br/>
+<br/>
+        &lt;h3&gt;<br/>
+          Les
+extra-jobs<br/>
+        &lt;/h3&gt;<br/>
+<br/>
+        &lt;p&gt;<br/>
+
+         Financer les projets en mobilisant les compétences<br/>
+   
+      et l'énergie des jeunes.<br/>
+        &lt;/p&gt;<br/>
+<br/>
+  
+   &lt;/article&gt;<br/>
+<br/>
+<br/>
+    &lt;/div&gt;<br/>
+<br/>
+ 
+&lt;/div&gt;<br/>
+<br/>
+&lt;/section&gt;<br/>
+<br/>
+<br/>
+&lt;!--
+================= JAMBOREE ================= --&gt;<br/>
+<br/>
+&lt;section
+class=&quot;jamboree&quot; id=&quot;jamboree&quot;&gt;<br/>
+<br/>
+ 
+&lt;div class=&quot;container jamboree-box&quot;&gt;<br/>
+<br/>
+   
+&lt;div&gt;<br/>
+<br/>
+      &lt;p class=&quot;eyebrow&quot;&gt;<br/>
+
+       UN GRAND PROJET EN PRÉPARATION<br/>
+      &lt;/p&gt;<br/>
+<br/>
+
+     &lt;h2&gt;<br/>
+        Direction Gdańsk !<br/>
+      &lt;/h2&gt;<br/>
+<br/>
+
+     &lt;p&gt;<br/>
+        Le groupe prépare une grande aventure
+internationale :<br/>
+        permettre aux jeunes de vivre le
+Jamboree, de rencontrer<br/>
+        d'autres scouts et de découvrir
+une nouvelle culture.<br/>
+      &lt;/p&gt;<br/>
+<br/>
+      &lt;br&gt;<br/>
+<br/>
+
+     &lt;p&gt;<br/>
+        Un projet collectif qui mobilise les
+jeunes,<br/>
+        les familles, les bénévoles, les entreprises
+et<br/>
+        les acteurs du territoire.<br/>
+      &lt;/p&gt;<br/>
+<br/>
+
+     &lt;br&gt;<br/>
+<br/>
+      &lt;a
+href=&quot;mailto:sgdf.digne.groupe@gmail.com&quot;<br/>
+        
+class=&quot;button button-blue&quot;&gt;<br/>
+        Soutenir le
+projet<br/>
+      &lt;/a&gt;<br/>
+<br/>
+    &lt;/div&gt;<br/>
+<br/>
+<br/>
+
+   &lt;div class=&quot;gdansk&quot;&gt;<br/>
+<br/>
+      &lt;div
+class=&quot;big&quot;&gt;<br/>
+        🌍<br/>
+      &lt;/div&gt;<br/>
+<br/>
+
+     &lt;h3&gt;<br/>
+        Digne → Gdańsk<br/>
+      &lt;/h3&gt;<br/>
+<br/>
+
+     &lt;p&gt;<br/>
+        Une aventure qui se construit ensemble.<br/>
+
+     &lt;/p&gt;<br/>
+<br/>
+    &lt;/div&gt;<br/>
+<br/>
+ 
+&lt;/div&gt;<br/>
+<br/>
+&lt;/section&gt;<br/>
+<br/>
+<br/>
+&lt;!--
+================= REJOINDRE ================= --&gt;<br/>
+<br/>
+&lt;section
+class=&quot;join&quot; id=&quot;contact&quot;&gt;<br/>
+<br/>
+  &lt;div
+class=&quot;container&quot;&gt;<br/>
+<br/>
+    &lt;div
+class=&quot;join-box&quot;&gt;<br/>
+<br/>
+      &lt;div&gt;<br/>
+<br/>
+
+       &lt;p class=&quot;eyebrow&quot;&gt;<br/>
+          ENVIE DE
+NOUS REJOINDRE ?<br/>
+        &lt;/p&gt;<br/>
+<br/>
+        &lt;h2&gt;<br/>
+
+         Il y a une place pour chaque aventurier.<br/>
+       
+&lt;/h2&gt;<br/>
+<br/>
+        &lt;p&gt;<br/>
+          Une question,
+une envie de découvrir le scoutisme<br/>
+          ou simplement
+envie de venir essayer ?<br/>
+          Écrivez-nous.<br/>
+       
+&lt;/p&gt;<br/>
+<br/>
+      &lt;/div&gt;<br/>
+<br/>
+      &lt;a
+href=&quot;mailto:sgdf.digne.groupe@gmail.com&quot;<br/>
+        
+class=&quot;button button-yellow&quot;&gt;<br/>
+        Nous
+contacter<br/>
+      &lt;/a&gt;<br/>
+<br/>
+    &lt;/div&gt;<br/>
+<br/>
+
+ &lt;/div&gt;<br/>
+<br/>
+&lt;/section&gt;<br/>
+<br/>
+&lt;/main&gt;<br/>
+<br/>
+<br/>
+&lt;!--
+================= FOOTER ================= --&gt;<br/>
+<br/>
+&lt;footer&gt;<br/>
+<br/>
+
+ &lt;div class=&quot;container footer-grid&quot;&gt;<br/>
+<br/>
+<br/>
+
+   &lt;div&gt;<br/>
+<br/>
+      &lt;div class=&quot;logo&quot;
+style=&quot;color:white; margin-bottom:15px;&quot;&gt;<br/>
+<br/>
+   
+    &lt;span class=&quot;logo-box&quot;&gt;<br/>
+          SGDF<br/>
+
+       &lt;/span&gt;<br/>
+<br/>
+        &lt;span&gt;<br/>
+         
+Digne-les-Bains<br/>
+        &lt;/span&gt;<br/>
+<br/>
+      &lt;/div&gt;<br/>
+<br/>
+
+     &lt;p style=&quot;color:#c8dbe5;&quot;&gt;<br/>
+        Scouts
+et Guides de France&lt;br&gt;<br/>
+        Groupe de Digne-les-Bains<br/>
+
+     &lt;/p&gt;<br/>
+<br/>
+    &lt;/div&gt;<br/>
+<br/>
+<br/>
+   
+&lt;div&gt;<br/>
+<br/>
+      &lt;h3&gt;<br/>
+        Contact<br/>
+   
+  &lt;/h3&gt;<br/>
+<br/>
+      &lt;a
+href=&quot;mailto:sgdf.digne.groupe@gmail.com&quot;&gt;<br/>
+       
+sgdf.digne.groupe@gmail.com<br/>
+      &lt;/a&gt;<br/>
+<br/>
+      &lt;a
+href=&quot;tel:+33616510439&quot;&gt;<br/>
+        06 16 51 04 39<br/>
+
+     &lt;/a&gt;<br/>
+<br/>
+    &lt;/div&gt;<br/>
+<br/>
+<br/>
+   
+&lt;div&gt;<br/>
+<br/>
+      &lt;h3&gt;<br/>
+        Navigation<br/>
+
+     &lt;/h3&gt;<br/>
+<br/>
+      &lt;a href=&quot;#groupe&quot;&gt;<br/>
+
+       Le groupe<br/>
+      &lt;/a&gt;<br/>
+<br/>
+      &lt;a
+href=&quot;#unites&quot;&gt;<br/>
+        Nos unités<br/>
+     
+&lt;/a&gt;<br/>
+<br/>
+      &lt;a href=&quot;#aventures&quot;&gt;<br/>
+
+       Nos aventures<br/>
+      &lt;/a&gt;<br/>
+<br/>
+      &lt;a
+href=&quot;#jamboree&quot;&gt;<br/>
+        Jamboree<br/>
+     
+&lt;/a&gt;<br/>
+<br/>
+    &lt;/div&gt;<br/>
+<br/>
+<br/>
+  &lt;/div&gt;<br/>
+<br/>
+<br/>
+
+ &lt;div class=&quot;container footer-bottom&quot;&gt;<br/>
+<br/>
+   
+© 2026 Scouts et Guides de France –<br/>
+    Groupe de
+Digne-les-Bains<br/>
+<br/>
+  &lt;/div&gt;<br/>
+<br/>
+&lt;/footer&gt;<br/>
+<br/>
+<br/>
+&lt;script&gt;<br/>
+<br/>
+function
+toggleMenu() {<br/>
+<br/>
+  const menu =
+document.getElementById(&quot;menu&quot;);<br/>
+<br/>
+ 
+menu.classList.toggle(&quot;open&quot;);<br/>
+<br/>
+}<br/>
+<br/>
+document.querySelectorAll(&quot;nav
+a&quot;).forEach(function(link) {<br/>
+<br/>
+ 
+link.addEventListener(&quot;click&quot;, function() {<br/>
+<br/>
+   
+document.getElementById(&quot;menu&quot;).classList.remove(&quot;open&quot;);<br/>
+<br/>
+
+ });<br/>
+<br/>
+});<br/>
+<br/>
+&lt;/script&gt;<br/>
+<br/>
+<br/>
+&lt;/body&gt;<br/>
+&lt;/html&gt;</p>
+</body>
+</html>
